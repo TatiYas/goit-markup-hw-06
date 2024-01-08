@@ -65,7 +65,20 @@ img {
     padding: 0 15px 0 15px;
   }
 }
+/*header*/
 
+@media screen and (min-width: 768px) {
+  .header-container{
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .header-container{
+    max-width: 1440px;
+    padding: 0 15px 0 15px;
+  }
+}
 .header-logo {
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
@@ -88,11 +101,12 @@ img {
   display: flex;
   /*gap: 40px;08.01*/
 }
-@media screen and (min-width: 768px) { 
-  .header-list {
-    display: none;
+@media screen and (max-width: 767.98px) {
+  .header-list 
+   {
+      display: none;
+    }
   }
-}
 
 .header-item {
   align-items: center;
@@ -158,12 +172,18 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+
 .header-contacts-list {
   display: flex;
   gap: 40px;
   align-items: center;
-  
 }
+@media screen and (max-width: 767.98px) {
+  .header-contacts-list 
+   {
+      display: none;
+    }
+  }
 .header-contacts-link {
   color: #434455;
   line-height: 1.5;
@@ -261,7 +281,7 @@ img {
 }
 
 /*TABLET*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768.98px) {
   .hero {
     max-width: 768px;
     background-image: linear-gradient(
@@ -393,20 +413,18 @@ img {
   align-items: center;
   justify-content: center;
 }
-/*TABLET*/
 
-/*DESKTOP*/
 
 /*section 3*/
 
 /*MOBILE*/ /*TABLET*/
 
-/*.team {
+.team {
   padding: 96px 0;
   background-color: #f4f4fd;
-}*/
+}
 
-/*DESKTOP
+/*DESKTOP*/
 @media screen and (min-width: 1158px) {
   .team {
     padding: 120px 0;
@@ -414,6 +432,30 @@ img {
 }
 
 /*MOBILE*/
+.container {
+  min-width: 320px;
+  max-width: 428px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 16px 0 16px;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+/*TABLET*/ /*DESKTOP*/
+
+@media screen and (min-width: 768px) {
+  .container{
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container{
+    max-width: 1440px;
+    padding: 0 15px 0 15px;
+  }
+}
+
 .title {
   min-width: 162px;
   color: #2e2f42;
@@ -428,7 +470,7 @@ img {
   margin-right: auto;
    margin-bottom: 79px;
 }
-/*TABLET*/ /*DESKTOP*/
+
 
 @media screen and (min-width: 768px) {
   .title {
@@ -448,6 +490,9 @@ img {
 }
 @media screen and (min-width: 768px) {
   .team-list {gap: 24px;}}
+
+  @media screen and (min-width: 1158px) {
+    .team-list {gap: 24px;}}
 
 .team-list:last-child {
   margin-right: 0px;
