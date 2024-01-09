@@ -113,22 +113,15 @@ img {
   .header-list 
    {
       display: none;
+    
     }
   }
-  /*@media screen and (max-width: 767.98px) {
-    .btn-header-menu
-     {
-        margin-left: 149px;
-        
-      }
-    }*/
-
+ 
 .header-item {
   align-items: center;
+  margin-right: 40px;
 }
-.header-item:last-child {
-  margin-right: 0px;
-}
+
 .header-link {
   display: block;
   /*margin-right: 40px;*/
@@ -191,12 +184,10 @@ img {
   align-items: center;
 
 }
-
 @media screen and (max-width: 767.98px) {
   .header-contacts-item 
    {
       display: none;
-      margin-right: auto;
     }
    
   }
@@ -210,7 +201,6 @@ img {
   .header-contacts-list 
    {
       display: none;
-      margin-right: auto;
     }
   }
  
@@ -218,6 +208,7 @@ img {
     .header-contacts-item 
      {
         margin-right: 0px;
+        gap: 40px;
       }
   }
   
@@ -391,10 +382,16 @@ img {
 
 /*section 2*/
 
-/*MOBILE*/
 .feature {
-  padding: 120px 0;
+  /*padding: 120px 0;*/
+  padding: 96px;
 }
+@media screen and (min-width: 1158px) {
+  .feature {
+    padding: 1209px 0;
+  }
+}
+
 .feature-title {
   color: #ffffff;
   font-size: 56px;
@@ -416,17 +413,45 @@ img {
 }
 .feature-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  gap: 72px;
 }
-.feature-list:first-child {
-  margin-right: 0px;
+@media screen and (min-width: 768px) {
+  .feature-list {
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .feature-list {
+    gap: 24px;
+  }
 }
 .feature-item {
-  width: calc((100% - 72px) / 4);
-  flex-direction: column;
-  align-items: flex-start;
+  /*width: calc((100% - 72px) / 4);*/
+  width: 100%;
+  align-items: center;
   justify-content: center;
 }
+@media only screen and (min-width: 768px) {
+  .feature-item {
+    width: 365;
+    width: calc((100% - 1 * 24px) / 2);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .feature-item {
+    margin-bottom: 0;
+    width: 264;
+    width: calc((100% - 3 * 24px) / 4);
+  }
+}
+ 
+
+
 .feature-item-name {
   color: #2e2f42;
   text-align: left;
@@ -466,6 +491,8 @@ img {
   align-items: center;
   justify-content: center;
 }
+
+/*MOBILE*/
 
 
 /*section 3*/
@@ -557,6 +584,8 @@ img {
 }
 .team-item-card {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   height: auto;
   max-width: 264px;
   align-items: center;
@@ -585,6 +614,7 @@ img {
     max-width: 1440px;
   }
 }
+
 .name {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -700,7 +730,9 @@ img {
 .portfolio-item-card {
   width: 100%;
   max-width: 288px;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px 24 px;
   height: auto;
   font-size: 36px;
   line-height: 1.11;
