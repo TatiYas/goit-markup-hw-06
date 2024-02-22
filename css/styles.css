@@ -77,13 +77,13 @@ img {
 
 /*MOBILE*/
 
-@media only screen and (min-width: 767.98px) {
+@media only screen and (max-width: 767.98px) {
   .hero {
     max-width: 768px;
   }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (max-width: 1158px) {
   .hero {
     max-width: 1440px;
     padding: 0 15px 0 15px;
@@ -91,13 +91,13 @@ img {
 }
 /*header*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .header-container{
     max-width: 768px;
   }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (max-width: 1158px) {
   .header-container{
     max-width: 1440px;
     padding: 0 15px 0 15px;
